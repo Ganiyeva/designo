@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.page-head {
+    padding: 6.4rem 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    width: 37rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-link {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+    color: #333136;
+    transition: 0.5 ease-in-out;
+}
+
+.main-link:hover {
+    text-decoration-line: underline;
+    color: #333136;
+}
+
+/* HERO */
+.hero {
+    padding-bottom: 8rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    background-image: url(../img/hom-sec1-after.png);
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+    z-index: -1;
+    top: 32rem;
+}
+
+.hero-bg {
+    border-radius: 2rem;
+    background-image: url(../img/hom-sec1-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 14.5rem 9.5rem 0 9.5rem;
+    overflow: hidden;
+}
+
+.page-title {
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    color: #FFFFFF;
+}
+
+.page-text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #FFFFFF;
+    width: 44.5rem;
+    margin-top: 2rem;
+}
+
+.learn-more {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.1rem;
+    color: #333136;
+    padding: 1.7rem 2.5rem;
+    background: #FFFFFF;
+    border-radius: 0.8rem;
+    margin-top: 4rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.learn-more:hover {
+    background-color: #FFAD9B;
+    color: white;
+}
+
+.phone-img {
+    text-align: end;
+}
+
+/* SERVICES */
+.services {
+    padding-top: 8rem;
+}
+
+.web-design {
+    display: inline-block;
+    padding: 27.3rem 13.6rem;
+    background-image: url(../img/design1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 1.5rem;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.web-design::before {
+    content: '';
+    position: absolute;
+    border-radius: 1.5rem;
+    top: 0;
+    right: 0;
+    height: 64rem;
+    left: 0;
+    background-color: rgba(231, 129, 107, 0.8);
+    display: none;
+}
+
+.web-design:hover::before {
+    display: block;
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.projects {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.5rem;
+    color: #FFFFFF;
+    margin-top: 2.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.app-design {
+    display: inline-block;
+    padding: 10.7rem 14.3rem;
+    background-image: url(../img/design2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.app-design::before {
+    content: '';
+    position: absolute;
+    border-radius: 1.5rem;
+    top: 0;
+    right: 0;
+    height: 30.8rem;
+    left: 0;
+    background-color: rgba(231, 129, 107, 0.8);
+    display: none;
+}
+
+.app-design:hover::before {
+    display: block;
+}
+
+.graphic {
+    background-image: url(../img/design3.jpg);
+    margin-top: 1.4rem;
+    padding: 10.7rem 8.8rem;
+}
+
+/* FEATURES */
+.features {
+    padding: 16rem 0;
+    position: relative;
+}
+
+.features::before {
+    content: '';
+    background-image: url(../img/hom-sec3-befor.png);
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+    z-index: -1;
+    top: 28.4rem;
+    right: 0;
+}
+
+.features-card {
+    width: 35rem;
+    text-align: center;
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.5rem;
+    color: #333136;
+    margin-top: 4.8rem;
+}
+
+.features-text {
+    color: #333136;
+    margin-top: 3.2rem;
+    width: 100%;
+}
+
+/* GET-IN-TOUCH */
+.get-bg {
+    background-image: url(../img/hom-sec4-bg.png);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7.2rem 9.5rem 4.6rem;
+    border-radius: 1.5rem;
+}
+
+.get-title {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+    width: 26.8rem;
+}
+
+.get{
+    padding: 1.7rem 1.9rem;
+    margin-top: 0;
+}
+
+.in{
+    text-align: end;
+}
