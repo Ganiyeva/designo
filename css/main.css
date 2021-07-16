@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url(icon.css);
 
 :root {
     font-size: 10px;
@@ -38,12 +39,27 @@ a {
     line-height: 1.4rem;
     letter-spacing: 0.2rem;
     color: #333136;
-    transition: 0.5 ease-in-out;
+    position: relative;
+}
+
+.main-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.1rem;
+    background: #333136;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
 }
 
 .main-link:hover {
-    text-decoration-line: underline;
     color: #333136;
+}
+
+.main-link:hover::after {
+    transform: scale(1);
 }
 
 /* HERO */
@@ -198,7 +214,7 @@ a {
 
 /* FEATURES */
 .features {
-    padding: 16rem 0;
+    padding: 16rem 0 9.4rem;
     position: relative;
 }
 
@@ -241,6 +257,8 @@ a {
     background-position: center;
     padding: 7.2rem 9.5rem 4.6rem;
     border-radius: 1.5rem;
+    position: relative;
+    bottom: -6.6rem;
 }
 
 .get-title {
@@ -251,11 +269,187 @@ a {
     width: 26.8rem;
 }
 
-.get{
+.get {
     padding: 1.7rem 1.9rem;
     margin-top: 0;
 }
 
-.in{
+.in {
     text-align: end;
+}
+
+/* FOOTER */
+.page-footer {
+    padding: 16.6rem 3.9rem 8rem;
+    background: #1D1C1E;
+}
+
+.footer-link {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    height: 0.1rem;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-link:hover::after {
+    transform: scale(1);
+}
+
+.hr {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    padding-top: 3rem;
+}
+
+.address {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.address-link {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.address-link:hover {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.social {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.icons {
+    width: 18.4rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon {
+    font-size: 2.4rem;
+    color: #E7816B;
+    transition: color 0.5s ease-in-out;
+}
+
+.icon:hover {
+    color: #FFAD9B;
+}
+
+/* ABOUT.HTML */
+/* ABOUT-US */
+.about-us {
+    padding-bottom: 16rem;
+}
+
+.about-us::before {
+    content: '';
+    background-image: url(../img/hom-sec1-after.png);
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+    z-index: -1;
+    top: 32rem;
+}
+
+.about-bg {
+    border-radius: 2rem;
+    background-image: url(../img/about-sec1-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+}
+
+.about-card {
+    padding: 13.5rem 9.5rem;
+}
+
+.about-img {
+    text-align: end;
+}
+
+.about-us .page-text {
+    width: 45.8rem;
+}
+
+/* TALENT */
+.talant-article {
+    border-radius: 2rem;
+    background-image: url(../img/about-sec2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+}
+
+.talent-write {
+    display: flex;
+    justify-content: center;
+}
+
+.talent-title {
+    color: #E7816B;
+}
+
+.talent-text {
+    color: #333136;
+}
+
+.talent-text span {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+/* LOCATIONS */
+.locations {
+    padding: 16rem 0;
+    text-align: center;
+}
+
+.locations .get {
+    background: #E7816B;
+    color: white;
+    margin-top: 3.2rem;
+}
+
+.locations .get:hover {
+    background: #FFAD9B;
+}
+
+/* DEAL */
+.deal{
+    padding-bottom: 9.4rem;
+}
+.deal-bg{
+    border-radius: 2rem;
+    background-image: url(../img/about-sec4-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
 }
