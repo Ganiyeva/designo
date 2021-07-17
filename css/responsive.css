@@ -43,9 +43,9 @@
     width: 100%;
   }
 
-  .about-us .about-img {
+  /* .about-us .about-img {
     height: 58.2rem;
-  }
+  } */
 
   .about-img img {
     height: 100%;
@@ -212,6 +212,7 @@
 
   .about-bg {
     background-position: center;
+    padding: 0;
   }
 
   .about-img img {
@@ -329,11 +330,11 @@
     color: #FFFFFF;
   }
 
-  .main-link:hover{
+  .main-link:hover {
     color: #FFFFFF;
   }
 
-  .main-link::after{
+  .main-link::after {
     width: 42%;
     background: #FFFFFF;
   }
@@ -342,7 +343,7 @@
     margin-top: 3.2rem;
   }
 
-  .main-mobil::after{
+  .main-mobil::after {
     width: 30%;
   }
 
@@ -385,7 +386,7 @@
     text-align: center;
   }
 
-  .footer-link::after{
+  .footer-link::after {
     left: 41.5%;
     bottom: 0;
     width: 17%;
@@ -422,10 +423,23 @@
 
   .location-address {
     flex-direction: column;
+    width: 100%;
   }
 
   .location-bg {
     text-align: center;
+  }
+
+  .contact-us .about-card {
+    text-align: center;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .btn-submit {
+    margin-top: 4rem;
   }
 }
 
@@ -440,19 +454,16 @@
     padding: 0;
   }
 
-  .container {
+  .page-head .container,
+  .services .container,
+  .features .container,
+  .get-in-touch .container {
     max-width: 400px;
   }
 
   .hero-bg {
     background-position: center;
     border-radius: 0;
-  }
-
-  .services .container,
-  .features .container,
-  .get-in-touch .container {
-    max-width: 400px;
   }
 
   .features-card {
@@ -481,6 +492,8 @@
   .location-bg {
     border-radius: 0;
     background-position: center;
+    padding: 8rem 0;
+    margin-top: 0;
   }
 
   .location img {
