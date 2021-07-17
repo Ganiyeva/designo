@@ -451,7 +451,6 @@
 
   .container {
     max-width: 100%;
-    padding: 0;
   }
 
   .page-head .container,
@@ -484,9 +483,8 @@
     border-radius: 0;
   }
 
-  .talent-text span {
-    display: inline;
-    margin-top: 0;
+  .talent-write{
+    padding: 6.4rem 2.4rem;
   }
 
   .location-bg {
@@ -525,5 +523,17 @@
 
   .get-bg {
     padding: 6rem 2.4rem;
+  }
+
+  .contact-us .about-bg{
+    padding: 6.4rem 2.4rem;
+  }
+
+  .page-footer{
+    padding: 25.3rem 0 6.4rem;
+  }
+
+  .get-bg{
+    bottom: -19.6rem;
   }
 }
