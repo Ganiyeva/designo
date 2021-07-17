@@ -329,8 +329,21 @@
     color: #FFFFFF;
   }
 
+  .main-link:hover{
+    color: #FFFFFF;
+  }
+
+  .main-link::after{
+    width: 42%;
+    background: #FFFFFF;
+  }
+
   .main-mobil {
     margin-top: 3.2rem;
+  }
+
+  .main-mobil::after{
+    width: 30%;
   }
 
   .page-title,
@@ -370,6 +383,12 @@
     margin-top: 3.2rem;
     width: 100%;
     text-align: center;
+  }
+
+  .footer-link::after{
+    left: 41.5%;
+    bottom: 0;
+    width: 17%;
   }
 
   .hr {
@@ -414,10 +433,6 @@
   .main-nav {
     left: 0;
     width: 100%;
-  }
-
-  .main-link::after {
-    width: 35%;
   }
 
   .container {
