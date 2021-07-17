@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 @import url(icon.css);
 
 :root {
@@ -83,6 +83,7 @@ a {
     background-image: url(../img/hom-sec1-bg.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: cover;
     padding: 14.5rem 9.5rem 0 9.5rem;
     overflow: hidden;
 }
@@ -134,8 +135,9 @@ a {
     display: inline-block;
     padding: 27.3rem 13.6rem;
     background-image: url(../img/design1.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     border-radius: 1.5rem;
     position: relative;
@@ -148,7 +150,7 @@ a {
     border-radius: 1.5rem;
     top: 0;
     right: 0;
-    height: 64rem;
+    height: 100%;
     left: 0;
     background-color: rgba(231, 129, 107, 0.8);
     display: none;
@@ -183,11 +185,13 @@ a {
     display: inline-block;
     padding: 10.7rem 14.3rem;
     background-image: url(../img/design2.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     border-radius: 1.5rem;
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 
 .app-design::before {
@@ -196,18 +200,20 @@ a {
     border-radius: 1.5rem;
     top: 0;
     right: 0;
-    height: 30.8rem;
+    height: 100%;
     left: 0;
     background-color: rgba(231, 129, 107, 0.8);
-    display: none;
+    visibility: hidden;
 }
 
 .app-design:hover::before {
-    display: block;
+    visibility: visible;
 }
 
 .graphic {
     background-image: url(../img/design3.jpg);
+    background-size: cover;
+    background-position: center;
     margin-top: 1.4rem;
     padding: 10.7rem 8.8rem;
 }
@@ -252,7 +258,7 @@ a {
 /* GET-IN-TOUCH */
 .get-bg {
     background-image: url(../img/hom-sec4-bg.png);
-    /* background-size: contain; */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 7.2rem 9.5rem 4.6rem;
@@ -323,11 +329,14 @@ a {
 
 .address {
     list-style-type: none;
-    font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: #FFFFFF;
     opacity: 0.5;
+}
+
+.address-title {
+    font-weight: 700;
 }
 
 .address-link {
@@ -382,6 +391,7 @@ a {
 .about-bg {
     border-radius: 2rem;
     background-image: url(../img/about-sec1-bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     overflow: hidden;
@@ -405,6 +415,7 @@ a {
     background-image: url(../img/about-sec2-bg.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -430,6 +441,20 @@ a {
 .locations {
     padding: 16rem 0;
     text-align: center;
+    position: relative;
+}
+
+.locations::before {
+    content: '';
+    background-image: url(../img/about-sec3-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100.6rem;
+    height: 59.4rem;
+    position: absolute;
+    z-index: -1;
+    top: 34.2rem;
+    right: 0;
 }
 
 .locations .get {
@@ -443,13 +468,155 @@ a {
 }
 
 /* DEAL */
-.deal{
+.deal {
     padding-bottom: 9.4rem;
 }
-.deal-bg{
+
+.deal-bg {
     border-radius: 2rem;
     background-image: url(../img/about-sec4-bg.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: cover;
     overflow: hidden;
+}
+
+/* LOCATIONS-HTML */
+/* LOCATION */
+.location {
+    padding-bottom: 9.4rem;
+}
+
+.location-bg {
+    border-radius: 2rem;
+    background-image: url(../img/locations-bgimg.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
+    padding: 7.8rem 9.5rem;
+}
+
+.locat-mt{
+    margin-top: 3rem;
+}
+
+.location-address {
+    display: flex;
+    max-width: 45rem;
+    justify-content: space-between;
+}
+
+.central-ofice {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-top: 2.4rem;
+}
+
+.designo {
+    font-weight: 700;
+    color: #333136;
+}
+
+.street {
+    color: #333136;
+}
+
+.street:hover {
+    color: #333136;
+}
+
+.location img {
+    border-radius: 2rem;
+}
+
+/* CONTACT-HTML */
+/* CONTACT-US */
+.form {
+    width: 38rem;
+    margin-left: 8.5rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 0.1rem solid #FFFFFF;
+    opacity: 0.5;
+    padding: 2.5rem 0 1.1rem 1.1rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:hover{
+    border-bottom: 0.3rem solid #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.input:hover::placeholder{
+    opacity: 1;
+}
+
+#textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #FFFFFF;
+    opacity: 0.5;
+    padding: 2.5rem 0 0 1.1rem;
+}
+
+#textarea:focus {
+    outline: none;
+}
+
+#textarea:hover{
+    border-bottom: 0.3rem solid #FFFFFF;
+    opacity: 1;
+}
+
+#textarea:hover::placeholder{
+    opacity: 1;
+}
+
+.btn-submit {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #333136;
+    border: none;
+    padding: 1.7rem 4.7rem;
+    background: #FFFFFF;
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: #FFAD9B;
+    color: #FFFFFF;
+}
+
+/* LOCATIONS */
+.contact-befor::before{
+    background-image: url(../img/contact-sec2-bg.png);
+    background-size: contain;
+    background-position: 5.5rem;
+    top: 25rem;
 }
